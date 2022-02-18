@@ -16,6 +16,6 @@ export default function App(){
         <Card headerText="First Header" bodyText="First body ....." />
         {/* <Card headerText="Secong Header" bodyText="Secong body ....." /> */}
         {/* {items} */}
-        {Data.map((item) => <Card headerText={item.head} bodyText={item.body} />)}
+        {Data.map((item, index) => <Card key={index} headerText={item.head} bodyText={item.body} />)}
     </div>
 }
