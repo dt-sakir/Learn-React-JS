@@ -1,7 +1,7 @@
 // Class component
 import React, {Component} from 'react';
 
-export default class FunctionalComponent extends Component{
+export default class ClassComponent extends Component{
     render() {
        return (
        <div style={{ backgroundColor:this.props.backgroundColor, color:'white', padding:'20px' }}>

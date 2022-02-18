@@ -1,6 +1,6 @@
 // Functional component
 const variable_name = 'JS';
-export default function ClassComponent(props){
+export default function FunctionalComponent(props){
     // console.log(props);
     const {headerText, bodyText} = props;
     return <div>
