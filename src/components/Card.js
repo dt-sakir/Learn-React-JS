@@ -1,3 +1,4 @@
+// Functional component
 const variable_name = 'JS';
 export default function Card(props){
     // console.log(props);
