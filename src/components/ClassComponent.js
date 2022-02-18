@@ -4,8 +4,8 @@ import React, {Component} from 'react';
 export default class FunctionalComponent extends Component{
     render() {
        return (
-       <div style={{ backgroundColor:'green', color:'white', padding:'20px' }}>
-           <h1 >This is class component</h1>
+       <div style={{ backgroundColor:this.props.backgroundColor, color:'white', padding:'20px' }}>
+           <h3 >This is class component. & bacground color is: {this.props.backgroundColor}</h3>
        </div>
        );
     }

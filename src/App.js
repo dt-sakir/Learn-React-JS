@@ -21,6 +21,8 @@ export default function App(){
         {Data.map((item, index) => <FunctionalComponent key={index} headerText={item.head} bodyText={item.body} />)}
         <hr/>
         <b>2. Class Component</b>
-        <ClassComponent />
+        <ClassComponent backgroundColor='red'/>
+        <ClassComponent backgroundColor='green'/>
+        <ClassComponent backgroundColor='yellow'/>
     </div>
 }
