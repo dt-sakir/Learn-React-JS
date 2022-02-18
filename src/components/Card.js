@@ -3,16 +3,16 @@ import ReactDOM from "react-dom";
 
 const variable_name = 'JS';
 
-function Card(){
-    return <>
-    <div className="card">
-      <div className="header">Hello head</div>
-      <div className="body">
-        Im Body
-        <h1>Hello React {variable_name}</h1>
+function Card(props){
+    // console.log(props);
+    return <div>
+        <div className="card">
+        <div className="header">{props.headerText}</div>
+        <div className="body">
+            <h1>{props.bodyText}</h1>
+            </div>
         </div>
-    </div>
-  </>
+  </div>
 }
 
 export default Card;

@@ -1,5 +1,8 @@
 .card{
     background-color: red; color: white;
+    width: 3in;
+    display: inline-block;
+    margin: 8px;
 }
 .header{
     text-align: center;
