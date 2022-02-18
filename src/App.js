@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
+import Profile from './components/Profile';
 import Data from './data.json';
 
 export default function App(){
@@ -13,6 +14,7 @@ export default function App(){
 
     return <div>
         <h1>Card Items</h1>
+        <Profile />
         <Card headerText="First Header" bodyText="First body ....." />
         {/* <Card headerText="Secong Header" bodyText="Secong body ....." /> */}
         {/* {items} */}
