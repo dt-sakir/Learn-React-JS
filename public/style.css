@@ -1,0 +1,12 @@
+.card{
+    background-color: red; color: white;
+}
+.header{
+    text-align: center;
+    font-size:18px;
+    font-style: bold;
+}
+
+.body{
+    background-color:wheat; color:black
+}
