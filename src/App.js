@@ -2,10 +2,11 @@ import React from 'react';
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
 import Data from './data.json';
+import Counter from './components/Counter';
 
 export default function App(){
     // console.log(Data);
-    let items = [];
+    // let items = [];
     // for(let x=0; x<Data.length; x++){
     //     items.push(<FunctionalComponent headerText={Data[x].head} bodyText={Data[x].body} />);
     // }
@@ -24,5 +25,6 @@ export default function App(){
         <ClassComponent backgroundColor='red'/>
         <ClassComponent backgroundColor='green'/>
         <ClassComponent backgroundColor='yellow'/>
+        <Counter  />
     </div>
 }
