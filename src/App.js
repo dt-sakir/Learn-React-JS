@@ -3,6 +3,7 @@ import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
 import Data from './data.json';
 import Counter from './components/Counter';
+import ConditionalRendering from './conditional-rendering/Index';
 
 export default function App(){
     // console.log(Data);
@@ -17,6 +18,7 @@ export default function App(){
         <h1>App.js file</h1>
         <b>1. Functional Component</b>
         <FunctionalComponent headerText="First Header" bodyText="First body ....." />
+        {/* Day 2 */}
         {/* <FunctionalComponent headerText="Secong Header" bodyText="Secong body ....." /> */}
         {/* {items} */}
         {Data.map((item, index) => <FunctionalComponent key={index} headerText={item.head} bodyText={item.body} />)}
@@ -26,5 +28,7 @@ export default function App(){
         <ClassComponent backgroundColor='green'/>
         <ClassComponent backgroundColor='yellow'/>
         <Counter  />
+        {/* Day 3 */}
+        <ConditionalRendering />
     </div>
 }
