@@ -4,6 +4,7 @@ import ClassComponent from './components/ClassComponent';
 import Data from './data.json';
 import Counter from './components/Counter';
 import ConditionalRendering from './conditional-rendering/Index';
+import EventHandeler from './event-handeler/EventHandeler';
 
 export default function App(){
     // console.log(Data);
@@ -30,5 +31,7 @@ export default function App(){
         <Counter  />
         {/* Day 3 */}
         <ConditionalRendering />
+        {/* Day 4 */}
+        <EventHandeler />
     </div>
 }
