@@ -5,6 +5,7 @@ import ClassComponent from './components/ClassComponent';
 import BoostrapComponent from './components/BoostrapComponent';
 import { ArrowFunction } from './components/ArrowFunction';
 import StateComponent from './components/StateComponent';
+import IfElseComponent from './components/IfElseComponent';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BoostrapComponent />
       <ArrowFunction />
       <StateComponent />
+      <IfElseComponent />
     </div>
   );
 }
