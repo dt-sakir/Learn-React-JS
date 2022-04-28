@@ -6,6 +6,7 @@ import BoostrapComponent from './components/BoostrapComponent';
 import { ArrowFunction } from './components/ArrowFunction';
 import StateComponent from './components/StateComponent';
 import IfElseComponent from './components/IfElseComponent';
+import RefreshComponent from './components/RefreshComponent';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ArrowFunction />
       <StateComponent />
       <IfElseComponent />
+      <RefreshComponent />
     </div>
   );
 }
