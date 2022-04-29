@@ -7,6 +7,7 @@ import { ArrowFunction } from './components/ArrowFunction';
 import StateComponent from './components/StateComponent';
 import IfElseComponent from './components/IfElseComponent';
 import RefreshComponent from './components/RefreshComponent';
+import ReactDOMComponent from './components/ReactDOMComponent';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <StateComponent />
       <IfElseComponent />
       <RefreshComponent />
+      <ReactDOMComponent />
     </div>
   );
 }
