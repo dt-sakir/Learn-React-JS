@@ -8,6 +8,7 @@ import StateComponent from './components/StateComponent';
 import IfElseComponent from './components/IfElseComponent';
 import RefreshComponent from './components/RefreshComponent';
 import ReactDOMComponent from './components/ReactDOMComponent';
+import FindDOMNodeComponent from './components/FindDOMNodeComponent';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <IfElseComponent />
       <RefreshComponent />
       <ReactDOMComponent />
+      <FindDOMNodeComponent />
     </div>
   );
 }
