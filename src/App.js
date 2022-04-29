@@ -9,6 +9,7 @@ import IfElseComponent from './components/IfElseComponent';
 import RefreshComponent from './components/RefreshComponent';
 import ReactDOMComponent from './components/ReactDOMComponent';
 import FindDOMNodeComponent from './components/FindDOMNodeComponent';
+import FormComponent from './components/FormComponent';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <RefreshComponent />
       <ReactDOMComponent />
       <FindDOMNodeComponent />
+      <FormComponent />
     </div>
   );
 }
