@@ -8,6 +8,7 @@ export default class Registration extends Component {
             email: null,
             phone: null,
             password: null,
+            city: 'tangail'
         }
     }
     onCHangeHandeler = (event) =>{
@@ -38,6 +39,12 @@ export default class Registration extends Component {
                     <input type="text" name='phone' className='form-control' placeholder='Your phone' onChange={this.onCHangeHandeler} />
                     <p>Password: {this.state.password}</p>
                     <input type="password" name='password' className='form-control' placeholder='Your password' onChange={this.onCHangeHandeler} />
+                    <p>{this.state.city}</p>
+                    <select className='form-control' name='city' value={this.state.city} onChange={this.onCHangeHandeler}>
+                        <option value="dhaka" key="">Dhaka</option>
+                        <option value="tangail" key="">Tangail</option>
+                        <option value="khulna" key="">Khulna</option>
+                    </select>
                     <button className='btn btn-success text-white' type='submit'>SUBMIT</button>
                 </form>
             </div>
