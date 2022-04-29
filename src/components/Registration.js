@@ -25,8 +25,14 @@ export default class Registration extends Component {
             this.setState({ [event.target.name]:'Name is not valid' });
         }
     }
+
     
     render() {
+        const myList = ['A', 'B', 'C', 'D', 'E'];
+        const list = myList.map((data) => {
+            return <li>{data}</li>
+        });
+
         return (
             <div className='container m-5 border border-danger'>
                 <b>Registration</b>
@@ -45,6 +51,9 @@ export default class Registration extends Component {
                         <option value="tangail" key="">Tangail</option>
                         <option value="khulna" key="">Khulna</option>
                     </select>
+                    <ul>
+                        {list}
+                    </ul>
                     <button className='btn btn-success text-white' type='submit'>SUBMIT</button>
                 </form>
             </div>
