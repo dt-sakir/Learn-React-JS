@@ -10,6 +10,7 @@ import RefreshComponent from './components/RefreshComponent';
 import ReactDOMComponent from './components/ReactDOMComponent';
 import FindDOMNodeComponent from './components/FindDOMNodeComponent';
 import FormComponent from './components/FormComponent';
+import Registration from './components/Registration';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <ReactDOMComponent />
       <FindDOMNodeComponent />
       <FormComponent />
+      <Registration />
     </div>
   );
 }

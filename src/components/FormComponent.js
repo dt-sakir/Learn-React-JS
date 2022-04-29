@@ -14,10 +14,14 @@ export default class FormComponent extends Component {
             [event.target.name] : event.target.value
         });
     }
+    onSubmitHandeler = () =>{
+        alert(this.state.name);
+        alert(this.state.email);
+    }
   render() {
     return (
       <div className='container m-5 border border-danger'>
-          <form>
+          <form onSubmit={this.onSubmitHandeler}>
               <p>{this.state.name}</p>
               <input type="text" name='name' className='form-control' placeholder='Your name' onChange={this.onCHangeHandeler} />
               <p>{this.state.email}</p>
