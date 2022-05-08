@@ -11,7 +11,7 @@ import NoPage from "./pages/NoPage";
 
 function App() {
     return (
-        <div className="App mt-5">
+        <div className="App">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Navbar />}>
