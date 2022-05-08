@@ -1,34 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionalComponent from './components/FunctionalComponent';
-import ClassComponent from './components/ClassComponent';
-import BoostrapComponent from './components/BoostrapComponent';
-import { ArrowFunction } from './components/ArrowFunction';
-import StateComponent from './components/StateComponent';
-import IfElseComponent from './components/IfElseComponent';
-import RefreshComponent from './components/RefreshComponent';
-import ReactDOMComponent from './components/ReactDOMComponent';
-import FindDOMNodeComponent from './components/FindDOMNodeComponent';
-import FormComponent from './components/FormComponent';
-import Registration from './components/Registration';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 function App() {
-  return (
-    <div className="App mt-5">
-      <h1>Hello World!</h1>
-      <FunctionalComponent text="Functional text" />
-      <ClassComponent text="Class text" />
-      <BoostrapComponent />
-      <ArrowFunction />
-      <StateComponent />
-      <IfElseComponent />
-      <RefreshComponent />
-      <ReactDOMComponent />
-      <FindDOMNodeComponent />
-      <FormComponent />
-      <Registration />
-    </div>
-  );
+    return (
+        <div className="App mt-5">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Navbar />}>
+                        <Route index element={<Home />} />
+                        <Route path="blogs" element={<Blogs />} />
+                        <Route path="contact" element={<Contact />} />
+                        <Route path="*" element={<NoPage />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
-
 export default App;
