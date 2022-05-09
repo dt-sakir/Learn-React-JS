@@ -18,11 +18,10 @@ class BlogList extends Component {
     }
 
     componentDidMount() {
-        fetch("https://newsapi.org/v2/everything?q=apple&from=2022-05-07&to=2022-05-07&sortBy=popularity&apiKey=19e637045b9a49c388d2f10e7083e571")
+        fetch("https://newsapi.org/v2/everything?q=apple&from=2022-04-11&to=2022-05-07&sortBy=popularity&apiKey=19e637045b9a49c388d2f10e7083e571")
             .then(res => res.json())
             .then(
                 (result) => {
-                    console.log(result);
                     this.setState({
                         isLoaded: true,
                         items: result.articles
