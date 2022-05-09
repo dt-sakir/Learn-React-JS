@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
+import Breadcrumb from "../components/Breadcrumb";
 
 export default class About extends Component {
   myStyle = {
@@ -10,7 +9,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-
+        <Breadcrumb title={'About page'}/>
       </div>
     )
   }

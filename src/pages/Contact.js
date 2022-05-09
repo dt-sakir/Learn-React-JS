@@ -1,18 +1,13 @@
 import React, {Component} from 'react'
-import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
 import { Form, Button } from 'react-bootstrap';
+import Breadcrumb from "../components/Breadcrumb";
 
 export default class Contact extends Component {
     render() {
         return (
-            <div className={'container'}>
-                <Stack sx={{width: '100%'}} spacing={2}>
-                    <Alert variant="filled" severity="info">
-                        Contact
-                    </Alert>
-                </Stack>
-                <Form>
+            <div>
+                <Breadcrumb title={'Contact page'}/>
+                <Form className={'container'}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
