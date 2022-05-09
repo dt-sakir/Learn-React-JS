@@ -11,11 +11,6 @@ export default class Blogs extends Component {
             <>
                 <Breadcrumb title={'Blog page'}/>
                 <BlogList/>
-                <Stack sx={{width: '100%'}} spacing={2}>
-                    <Alert variant="filled" severity="info">
-                        Blogs
-                    </Alert>
-                </Stack>
             </>
         )
     }
